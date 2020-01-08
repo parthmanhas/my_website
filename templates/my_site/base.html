@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  {% block css_block%}
+  {% endblock %}
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">Parth Manhas</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+          <li class="nav-item active"><a class="nav-link" href="{% url 'aboutme' %}">About Me</a></li>
+          <li class="nav-item active"><a class="nav-link" target='_blank' href="https://www.github.com/ishouldcode">Github</a></li>
+          <li class="nav-item active"><a class="nav-link" target='_blank' href="https://www.linkedin.com/parthmanhas/">LinkedIn</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+
+    {% block body_block %}
+    {% endblock %}
+
+
+  </body>
+</html>

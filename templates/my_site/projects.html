@@ -1,0 +1,59 @@
+{% extends 'my_site/base.html' %}
+{% load static %}
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron" align='center'  style='padding-top:12%'> 
+    <h1 class='display-4'>Projects</h1>
+
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body d-flex flex-column">
+          <img class="card-img-top img-thumbnail" src="{% static 'self/colorlight.png' %}" style='width:100px;'>
+          <h4 class="card-title">Color Light</h4>
+          <p class="card-text">A simple, fun android game.</p>
+          <a target='_blank' href="https://play.google.com/store/apps/details?id=com.ParthManhas.ColorLight" class="btn btn-primary stretched-link mt-auto">Checkout!</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body d-flex flex-column">
+          <img class="card-img-top img-thumbnail" src="{% static 'self/hypnopipes.png' %}" style='width:100px;'>
+          <h4 class="card-title">Hypnopipes</h4>
+          <p class="card-text">A simple, fun and yet another android game.</p>
+          <a target='_blank' href="https://play.google.com/store/apps/details?id=com.ParthManhas.HypnoPipes" class="btn btn-primary stretched-link mt-auto">Checkout!</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body d-flex flex-column">
+          <img class="card-img-top img-thumbnail" src="{% static 'self/scraper.png' %}" style='width:100px;'>
+          <h4 class="card-title">Playstore Scraper</h4>
+          <p class="card-text">A simple Playstore app data scraper.</p>
+          <a target='_blank' href="https://github.com/ishouldcode/play_scraper" class="btn btn-primary stretched-link mt-auto">Checkout!</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body d-flex flex-column">
+          <img class="card-img-top img-thumbnail" src="{% static 'self/topanime.png' %}" style='width:100px;'>
+          <h4 class="card-title">Top 10 Anime</h4>
+          <p class="card-text">A simple latest episode tracker.</p>
+          <a target='_blank'href="https://github.com/ishouldcode/python_projects" class="btn btn-primary stretched-link mt-auto">Checkout!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+  <!-- <table>
+    <tr>
+      <td><a href="https://www.google.com">
+        <img src="{% static 'self/colorlight.png' %}" alt="" class="img-thumbnail">
+      </a></td>
+      <td><img src="{% static 'self/hypnopipes.png' %}" alt="" class="img-thumbnail"></td>
+      <td><img src="{% static 'self/scraper.png' %}" alt="" class="img-thumbnail"></td>
+      <td><img src="{% static 'self/topanime.png' %}" alt="" class="img-thumbnail"></td>
+    </tr>
+  </table> -->
+</div>
+{% endblock %}

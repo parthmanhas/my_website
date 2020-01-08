@@ -1,0 +1,46 @@
+{% extends 'my_site/base.html' %}
+{% load static %}
+{% block css_block %}
+<style>
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+</style>
+{% endblock %}
+
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron" align='center' style='padding-top:18%; padding-bottom:15%'>
+    <h1 class="display-4">Anime.Guitar.Games.Travel.Books.Fun</h1>
+    <h2 class="display-4">Let's Connect!</h2>
+
+    <div class="container">
+      <a target='_blank' href="https://www.facebook.com/parth.manhas" class="fa fa-facebook"></a>
+      <a target='_blank' href="https://www.instagram.com/parthmanhas/" class="fa fa-instagram"></a>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
